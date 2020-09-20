@@ -1,0 +1,180 @@
+/* --- Google Fonts --- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #303030;
+}
+
+/* --- container --- */
+#not-available {
+  color: white;
+  font-size: 2rem;
+  line-height: 7rem;
+  width: 90%;
+  text-align: center;
+}
+
+#wrapper {
+  width: 95vw;
+  margin: auto;
+}
+
+#wrapper .container {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #wrapper .container {
+    width: 70rem;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #winner-display,
+  #test {
+    position: fixed;
+    top: calc(50vh - 20rem);
+    left: calc(50vw - 20rem);
+    width: 40rem;
+    height: 40rem;
+    background: #191919;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #winner-display h3,
+  #test h3 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  #winner-display h3 #player,
+  #test h3 #player {
+    color: yellow;
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+  #winner-display #restart-button,
+  #test #restart-button {
+    color: #f1f3f6;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    background: #191919;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0.1rem solid white;
+    letter-spacing: 0.1rem;
+  }
+  #winner-display #restart-button:hover,
+  #test #restart-button:hover {
+    background: #970a0a;
+  }
+  #wrapper .container {
+    width: 80rem;
+    margin: 5rem auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #wrapper .container #player-x,
+  #wrapper .container #player-o {
+    text-transform: uppercase;
+    width: calc(100% / 3);
+    text-align: center;
+    font-size: 2rem;
+  }
+  #wrapper .container #player-x h3,
+  #wrapper .container #player-o h3 {
+    padding: 1rem;
+    margin: auto;
+    width: 50%;
+    color: #c2301d;
+  }
+  #wrapper .container .score {
+    font-size: 12rem;
+    text-align: center;
+    color: #6ce0cd;
+    padding: 1rem 0;
+  }
+  #wrapper .container #game-area {
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #wrapper .container #game-area .box {
+    height: 10rem;
+    background: #f1f1f1;
+    font-size: 8rem;
+    text-align: center;
+  }
+  #wrapper .container #game-area .box:nth-of-type(1) {
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(2) {
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(3) {
+    border-bottom: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(4) {
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(5) {
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(6) {
+    border-bottom: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(7) {
+    border-right: 0.1rem solid black;
+  }
+  #wrapper .container #game-area .box:nth-of-type(8) {
+    border-right: 0.1rem solid black;
+  }
+}
+/*# sourceMappingURL=main.css.map */
